@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FaUserEdit } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import photo from '../assets/photo.jpg'
 
 const Profile = () => {
   const [profilePic, setProfilePic] = useState(
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvRTEDKecR9-NLVCMW5eXADdon7ydsZ0Vcw&s"
+    photo
   );
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -54,17 +55,17 @@ const Profile = () => {
 
         <div className="flex flex-col items-start md:items-center lg:items-start px-2   ">
           <div className="card-title text-[30px] font-bold mb-2">
-            Julee Cruise
+            Vikas Patel
           </div>
           <div className="card-text text-muted mb-1 text-[12px] ">
-            Product Designer
+            Software Engineer
           </div>
           <a
             href="https://www.flatlogic.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="text-primary text-sm mb-4">Flatlogic.com</div>
+            <div className="text-primary text-sm mb-4">vscoder7780.com</div>
           </a>
           <div className="flex  cursor-pointer space-x-2 gap-1 flex-wrap">
             <div
