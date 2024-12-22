@@ -12,12 +12,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 const LeftSideBar = ({ isVisible }) => {
   const iconSize = "text-[20px]"; // Global icon size class
-  const textSize = "text-sm"; // Global text size class
-
+  const textSize = "text-sm"; // Gltext
   return (
+
     <div
       className={`fixed top-14 left-0 w-[200px] h-full z-10 bg-[#f5f7ff] text-[#aaaaaa] shadow-md transition-transform duration-300 transform overflow-scroll ${
-        false ? "translate-x-0 translate-y-1" : "-translate-x-full"
+        isVisible ? "translate-x-0 translate-y-1" : "-translate-x-full"
       } lg:translate-x-0`}
     >
       <aside className="">
