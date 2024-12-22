@@ -1,0 +1,115 @@
+{
+  "workFiles": [
+    {
+      "index": 1,
+      "name": "UI/UX",
+      "numberOfFile":178,
+      "Textcolor": "#A6B5FC",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 2,
+      "name": "Design",
+      "numberOfFile": 154,
+      "Textcolor": "#FD5991",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 3,
+      "name": "Art",
+      "numberOfFile": 100,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 4,
+      "name": "Illustration",
+      "numberOfFile": 154,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 5,
+      "name": "Mobile",
+      "numberOfFile": 107,
+      "Textcolor": "#6EDEB9",
+      "icon": "CiImageOn"
+    }
+  ],
+  "privateFiles": [
+    {
+      "index": 11,
+      "name": "UI/UX",
+      "numberOfFile": 120 ,
+      "Textcolor": "#A6B5FC",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 12,
+      "name": "Design",
+      "numberOfFile": 110,
+      "Textcolor": "#FD5991",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 13,
+      "name": "Art",
+      "numberOfFile": 80,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    },
+   
+    {
+      "index": 14,
+      "name": "Illustration",
+      "numberOfFile": 126,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    }
+    , {
+      "index": 15,
+      "name": "Mobile",
+      "numberOfFile": 60,
+      "Textcolor": "#6EDEB9",
+      "icon": "CiImageOn"
+    }
+  ],
+  "socialFiles": [
+    {
+      "index": 21,
+      "name": "UI/UX",
+      "numberOfFile": 110,
+      "Textcolor": "#A6B5FC",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 22,
+      "name": "Design",
+      "numberOfFile": 90,
+      "Textcolor": "#FD5991",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 33,
+      "name": "Art",
+      "numberOfFile": 40,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 44,
+      "name": "Illustration",
+      "numberOfFile": 80,
+      "Textcolor": "#FFC878",
+      "icon": "CiImageOn"
+    },
+    {
+      "index": 55,
+      "name": "Mobile",
+      "numberOfFile": 32,
+      "Textcolor": "#6EDEB9",
+      "icon": "CiImageOn"
+    }
+   
+  ]
+}

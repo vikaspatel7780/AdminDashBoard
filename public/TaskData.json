@@ -1,0 +1,89 @@
+{
+    "Today": [
+      {
+        "time": "10:20 AM",
+        "color": "blue",
+        "task": "Call conference with a New client"
+      },
+      {
+        "time": "10:30 AM",
+        "color": "blue",
+        "task": "Presentation Demo Ecological"
+      },
+      {
+        "time": "10:50 AM",
+        "color": "green",
+        "task": "Call with PR Manager"
+      },
+      {
+        "time": "11:30 AM",
+        "color": "yellow",
+        "task": "Interview with a new UI/UX"
+      },
+      {
+        "time": "12:00 PM",
+        "color": "red",
+        "task": "Team meeting on product launch"
+      },
+      {
+        "time": "01:30 PM",
+        "color": "blue",
+        "task": "Design review for homepage"
+      },
+      {
+        "time": "03:00 PM",
+        "color": "green",
+        "task": "Catch-up with marketing lead"
+      },
+      {
+        "time": "04:15 PM",
+        "color": "yellow",
+        "task": "Client onboarding session"
+      }
+    ],
+    "ThisWeek": [
+      {
+        "time": "09:00 AM",
+        "color": "red",
+        "task": "Weekly Planning Meeting"
+      },
+      {
+        "time": "12:00 PM",
+        "color": "blue",
+        "task": "Client Follow-up"
+      },
+      {
+        "time": "02:00 PM",
+        "color": "yellow",
+        "task": "Team Sync-up"
+      },
+      {
+        "time": "03:30 PM",
+        "color": "green",
+        "task": "Budget Review"
+      }
+    ],
+    "ThisMonth": [
+      {
+        "time": "08:00 AM",
+        "color": "blue",
+        "task": "Monthly Sales Analysis"
+      },
+      {
+        "time": "09:45 AM",
+        "color": "green",
+        "task": "Project Kick-off Meeting"
+      },
+      {
+        "time": "11:00 AM",
+        "color": "yellow",
+        "task": "Product Launch Review"
+      },
+      {
+        "time": "01:00 PM",
+        "color": "red",
+        "task": "All-hands Meeting"
+      }
+    ]
+  }
+  
