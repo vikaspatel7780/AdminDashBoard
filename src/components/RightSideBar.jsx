@@ -30,7 +30,6 @@ const [loading, setLoading] = useState(true);
       })
       .then((data) => {
         dispatch(setFiles(data))
-        console.log(data)
         setLoading(false)
       })
       .catch((err) => {

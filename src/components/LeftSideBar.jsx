@@ -10,27 +10,28 @@ import { FaHouse } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 
 
-const LeftSideBar = ({ isVisible }) => {
+const LeftSideBar = ({ isVisible, toggleSidebar}) => {
   const iconSize = "text-[20px]"; // Global icon size class
   const textSize = "text-sm"; // Gltext
+  
   return (
 
     <div
       className={`fixed top-14 left-0 w-[200px] h-full z-10 bg-[#f5f7ff] text-[#aaaaaa] shadow-md transition-transform duration-300 transform overflow-scroll ${
         isVisible ? "translate-x-0 translate-y-1" : "-translate-x-full"
       } lg:translate-x-0`}
-    >
-      <aside className="">
-        <ul className="">
-          <li className="hover:bg-slate-200 mt-4">
+      onClick={toggleSidebar} >
+      <aside className="" >
+        <ul className="" >
+          <li className="hover:bg-slate-200 mt-4" >
             <Link to="/" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
-              <FaUserCircle className={`${iconSize} mr-4 text-[#3A5CFF]`}/>
+              <FaUserCircle className={`${iconSize} mr-4 text-[#3A5CFF]`}  />
               <span className={textSize}>Profile</span>
             </Link>
           </li>
           <li className="hover:bg-slate-200">
             <Link to="/dashboard" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
-              <FaHouse className={`${iconSize} mr-4`} />
+              <FaHouse className={`${iconSize} mr-4`}   />
               <span className={textSize}>Dashboard</span>
             </Link>
           </li>

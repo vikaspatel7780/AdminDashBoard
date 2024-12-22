@@ -22,15 +22,12 @@ const TasksSection = () => {
     setPopupVisible(true);
   };
 
+
   const handleEdit = () => {
-    console.log(selectedTaskIndex);
-    
     setEditVisible(true);
   };
 
   const handleSaveEdit = () =>{
-    console.log(userTime)
-    console.log(userTask)
     toast.success("Your task was updated successfully!")
     setEditVisible(false);
   }

@@ -32,7 +32,7 @@ const Profile = () => {
       <Header isVisible={isVisible} toggleSidebar={toggleSidebar} />
 
       <div className="flex mt-16 w-full">
-        <LeftSideBar isVisible={isVisible} className="" />
+        <LeftSideBar isVisible={isVisible} toggleSidebar={toggleSidebar} className="" />
 
         <Routes>
           <Route>
