@@ -40,7 +40,7 @@ const Profile = () => {
             id="profile-picture-input"
             className="hidden"
             accept="image/*"
-            onChange={handleImageChange} // Handle the image change
+            onChange={handleImageChange}
           />
 
           <div className=" flex gap-2 ">
@@ -61,7 +61,7 @@ const Profile = () => {
             Software Engineer
           </div>
           <a
-            href="https://www.flatlogic.com"
+            href="https://vscoder7780.onrender.com"
             target="_blank"
             rel="noopener noreferrer"
           >
