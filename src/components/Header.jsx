@@ -10,7 +10,7 @@ const Header = ({  toggleSidebar }) => {
         <div className="flex items-center gap-5 pl-6">
           <i className="bi bi-arrow-left text-xl font-bold cursor-pointer hover:text-gray-200" onClick={()=>navigate(-1)}></i>
           <div className="text-[18px] font-semibold hidden md:block">
-           Admin Panell
+           Admin Panel
           </div>
         </div>
 
@@ -25,7 +25,7 @@ const Header = ({  toggleSidebar }) => {
           <IoMenu
             className=" text-black cursor-pointer lg:hidden block z-90"
             size={32}
-            onClick={toggleSidebar} // Call the function passed as a prop
+            onClick={toggleSidebar} 
           />
         </div>
       

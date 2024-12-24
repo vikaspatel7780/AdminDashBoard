@@ -17,6 +17,7 @@ import MenuLevels from "../Pages/MenuLevels/MenuLevels";
 import Table from "../Pages/Table/Table";
 import UiElements from "../Pages/UiElements/UiElements";
 import User from "../Pages/User/User";
+import Login from "../Pages/Login/Login"
 
 
 const Profile = () => {
@@ -37,6 +38,7 @@ const Profile = () => {
         <Routes>
           <Route>
           <Route path="/" element={<RightSideBar />} />
+
           <Route path="/ecommerce" element={<ECommerce />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/documentation" element={<Documentation />} />

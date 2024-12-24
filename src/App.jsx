@@ -9,8 +9,6 @@ const App = () => {
   return (
     <Router>
     <Provider store={store}>
-
-  
       <Dashboard />
       </Provider>
       <Toaster />
