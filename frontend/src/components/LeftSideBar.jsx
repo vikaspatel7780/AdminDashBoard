@@ -8,35 +8,42 @@ import { GoCopy } from "react-icons/go";
 import { FaUserCircle, FaFileAlt, FaRegStar } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
-
-
-const LeftSideBar = ({ isVisible, toggleSidebar}) => {
+const LeftSideBar = ({ isVisible, toggleSidebar }) => {
   const iconSize = "text-[20px]"; // Global icon size class
   const textSize = "text-sm"; // Gltext
-  
-  return (
 
+  return (
     <div
       className={`fixed top-14 left-0 w-[200px] h-full z-10 bg-[#f5f7ff] text-[#aaaaaa] shadow-md transition-transform duration-300 transform overflow-scroll ${
         isVisible ? "translate-x-0 translate-y-1" : "-translate-x-full"
       } lg:translate-x-0`}
-      onClick={toggleSidebar} >
-      <aside className="" >
-        <ul className="" >
-          <li className="hover:bg-slate-200 mt-4" >
-            <Link to="/" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
-              <FaUserCircle className={`${iconSize} mr-4 text-[#3A5CFF]`}  />
+      onClick={toggleSidebar}
+    >
+      <aside className="">
+        <ul className="">
+          <li className="hover:bg-slate-200 mt-4">
+            <Link
+              to="/"
+              className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+            >
+              <FaUserCircle className={`${iconSize} mr-4 text-[#3A5CFF]`} />
               <span className={textSize}>Profile</span>
             </Link>
           </li>
           <li className="hover:bg-slate-200">
-            <Link to="/dashboard" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
-              <FaHouse className={`${iconSize} mr-4`}   />
+            <Link
+              to="/dashboard"
+              className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+            >
+              <FaHouse className={`${iconSize} mr-4`} />
               <span className={textSize}>Dashboard</span>
             </Link>
           </li>
           <li className="hover:bg-slate-200 relative">
-            <Link to="/ecommerce" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
+            <Link
+              to="/ecommerce"
+              className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+            >
               <IoMdCart className={`${iconSize} mr-4`} />
               <div className="absolute translate-x-20 -translate-y-3 text-white bg-[#3fcb9b] text-[9px] h-3 w-12 rounded-xl flex justify-center items-center">
                 NodeJS
@@ -45,7 +52,10 @@ const LeftSideBar = ({ isVisible, toggleSidebar}) => {
             </Link>
           </li>
           <li className="hover:bg-slate-200 relative">
-            <Link to="/user" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
+            <Link
+              to="/user"
+              className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+            >
               <FaUserCircle className={`${iconSize} mr-4`} />
               <div className="absolute translate-x-11 -translate-y-3 text-white bg-[#fd5991] text-[9px] h-3 w-7 rounded-3xl flex justify-center">
                 New
@@ -54,7 +64,10 @@ const LeftSideBar = ({ isVisible, toggleSidebar}) => {
             </Link>
           </li>
           <li className="hover:bg-slate-200">
-            <Link to="/documentation" className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
+            <Link
+              to="/documentation"
+              className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+            >
               <FaFileAlt className={`${iconSize} mr-4`} />
               <span className={textSize}>Documentation</span>
             </Link>
@@ -71,51 +84,54 @@ const LeftSideBar = ({ isVisible, toggleSidebar}) => {
             {
               icon: <RiLayoutGridLine className={`${iconSize} mr-4`} />,
               text: "Core",
-              link: "/core"
+              link: "/core",
             },
             {
               icon: <RiLayoutGridLine className={`${iconSize} mr-4`} />,
               text: "Tables",
-              link: "/tables"
+              link: "/tables",
             },
             {
               icon: <GoCopy className={`${iconSize} mr-4`} />,
               text: "UI Elements",
-              link: "/ui-elements"
+              link: "/ui-elements",
             },
             {
               icon: <IoDocumentText className={`${iconSize} mr-4`} />,
               text: "Forms",
-              link: "/forms"
+              link: "/forms",
             },
             {
               icon: <MdBarChart className={`${iconSize} mr-4`} />,
               text: "Charts",
-              link: "/charts"
+              link: "/charts",
             },
             {
               icon: <BsGrid1X2Fill className={`${iconSize} mr-4`} />,
               text: "Grid",
-              link: "/grid"
+              link: "/grid",
             },
             {
               icon: <IoMapSharp className={`${iconSize} mr-4`} />,
               text: "Maps",
-              link: "/maps"
+              link: "/maps",
             },
             {
               icon: <FaRegStar className={`${iconSize} mr-4`} />,
               text: "Extra",
-              link: "/extra"
+              link: "/extra",
             },
             {
               icon: <IoMdFolderOpen className={`${iconSize} mr-4`} />,
               text: "Menu Levels",
-              link: "/menu-levels"
+              link: "/menu-levels",
             },
           ].map((item, index) => (
             <li className="hover:bg-slate-200" key={index}>
-              <Link to={item.link} className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
+              <Link
+                to={item.link}
+                className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+              >
                 {item.icon}
                 <span className={textSize}>{item.text}</span>
               </Link>
@@ -133,16 +149,19 @@ const LeftSideBar = ({ isVisible, toggleSidebar}) => {
             {
               icon: <MdOutlineLibraryBooks className={`${iconSize} mr-4`} />,
               text: "Library",
-              link: "/library"
+              link: "/library",
             },
-            { 
-              icon: <i className={`${iconSize} mr-4`} />, 
-              text: "Support", 
-              link: "/support"
+            {
+              icon: <i className={`${iconSize} mr-4`} />,
+              text: "Support",
+              link: "/support",
             },
           ].map((item, index) => (
             <li className="hover:bg-slate-200" key={index}>
-              <Link to={item.link} className="flex items-center py-[13px] px-[30px] rounded cursor-pointer">
+              <Link
+                to={item.link}
+                className="flex items-center py-[13px] px-[30px] rounded cursor-pointer"
+              >
                 {item.icon}
                 <span className={textSize}>{item.text}</span>
               </Link>

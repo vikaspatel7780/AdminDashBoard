@@ -10,7 +10,7 @@ const Login = () => {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) navigate("/");
-  }, []); // Empty dependency array to run once on mount
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -29,8 +29,8 @@ const Login = () => {
     result = await result.json();
     console.log(result);
 
-    if (result.username) {
-      localStorage.setItem("user", JSON.stringify(result));
+    if (result.success) {
+      localStorage.setItem("authToken", JSON.stringify(result));
       navigate("/");
       toast.success("Logged in Successfully");
     } else {
